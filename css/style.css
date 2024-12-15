@@ -1,0 +1,101 @@
+@import url(css/reset.css)
+
+
+body {
+    background-color: #004C56;
+    margin: 10%;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.card {
+    background-color: #FFFDD0;
+    padding: 10px;
+    border-radius: 5px;
+    min-height: 300px;
+    width: 100%;
+  
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.details-container {
+    flex: 1;
+    align-self: self-end;
+}
+
+p {
+    font-weight: bold;
+}
+
+.avatar-container {
+    flex: 2;
+    flex-basis: 250px;
+    align-self: self-start;
+}
+
+.header,
+.first-line {
+    color: #004C56;
+}
+
+.photo {
+    width: 100%;
+    max-width: 220px;
+
+}
+
+.header .phone {
+    color: black;
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        background-color: pink;
+    }
+    .hidden {
+        content-visibility: hidden;
+    }
+}
+
+@media screen and (min-width: 601px) and (max-width: 899px) {
+    body {background-color: #004C56;
+
+    }
+    .hidden {
+        content-visibility: hidden;
+    }
+}
+
+
+@media screen and (min-width: 900px) {
+    body { background-color: black;
+           background-image: url(images/laura2.png);
+    }
+
+    .card {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        flex-flow:  space-evenly;
+    }
+
+    .hidden {
+        flex-direction: column;
+        flex: auto;
+        padding-left: 10%;
+        padding-right: 15%;
+        flex-wrap: nowrap;        
+    }
+   
+}
+
+
+
+
+
+
+  
