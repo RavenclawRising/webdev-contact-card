@@ -3,23 +3,29 @@
 
 body {
     background-color: #004C56;
-    margin: 10%;
+    margin: 5%;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .card {
     background-color: #FFFDD0;
     padding: 10px;
-    border-radius: 5px;
-    min-height: 300px;
-    width: 100%;
-  
+    border-radius: 10px;
+    height: auto;
+    min-width: 220px;
+    margin: 6%;
 }
 
 .row{
     display: flex;
     flex-wrap: wrap;
+}
 
+
+.hidden {
+    border-radius: 118px;
+    padding-left: 10%;
+    padding-right: 20%;
 }
 
 .details-container {
@@ -29,6 +35,10 @@ body {
 
 p {
     font-weight: bold;
+}
+
+.details-container p, h2 {
+    justify-self: center;
 }
 
 .avatar-container {
@@ -72,23 +82,38 @@ p {
 
 
 @media screen and (min-width: 900px) {
-    body { background-color: black;
-           background-image: url(images/laura2.png);
-    }
+    body { background-color: #F9D160;
+    
+ }
 
-    .card {
+       .card {
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
         flex-flow:  space-evenly;
     }
+   
+    
+   
+}
 
+@media screen and (min-width: 1100px) {    
+    body { background-color: lightcoral;
+        background-image: url(images/laura2.jpg);
+ }
+
+    
     .hidden {
-        flex-direction: column;
-        flex: auto;
         padding-left: 10%;
-        padding-right: 15%;
-        flex-wrap: nowrap;        
+        padding-right: 16%;
+        flex-direction: column;
+        flex: auto;     
+        content-visibility: visible; 
+        position-visibility: unset; 
+    }
+
+    .card {
+        max-height: 450px;
     }
    
 }
